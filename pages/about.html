@@ -3,29 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MEMEOW | О нас</title>
     <link rel="stylesheet" href="./../style.css">
-</head>
+
+<title>О нас | Мир Котов</title>
+  <link rel="stylesheet" href="../style.css"> 
+
 <body>
-     <header class="header">
-        <a href="./../index.html">
-    <img src="./../images/i.webp" alt="">
-    </a>
-    <nav class="nav">
-      <a href="URL">
-        Главная
-      </a>
-      <a href="URL">
-        О нас
-      </a>
-      <a href="URL">
-        Контакты
-      </a>
-      <a href="URL">
-        Наши питомцы
-      </a>
+  <header class="header">
+    <img src="../images/i.webp" alt="Логотип Мир Котов"> 
+    <nav role="navigation">
+      <div class="menuToggle">
+        <input type="checkbox" class="menuCheckbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <li>
+            <a href="../index.html"> 
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Главная</label>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="active"> 
+              <label for="menuCheckbox" onclick="this.parentNode.click();">О нас</label>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Контакты</label>
+            </a>
+          </li>
+          <li>
+            <a href="./ourPets.html">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Наши питомцы</label>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <h1>О нас</h1>
+  <div class="cover about-cover"> 
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="content_h1">
+        Немного о нашей миссии
+      </h1>
+      <p class="content_p">
+        Мы создали этот проект, чтобы делиться радостью и теплом, которые дарят нам котики каждый день.
+      </p>
+    </div>
+  </div>
+
+  <section class="about-content">
+    <h2>Наша история</h2>
+    <div class="about-text">
+      <p> Я (основатель) этого сайта встретила на улице маленького пушистого комочка, который жалобно мяукал. С тех пор моя жизнь изменилась, и я решила посвятить себя помощи этим удивительным созданиям и распространению позитива через забавные мемы и трогательные истории.</p>
+      
+      <p>Наш проект объединяет любителей котиков со всего мира. Мы верим, что каждый кот заслуживает любви и заботы, а каждый человек - немного кошачьего тепла в своей жизни.</p>
+    </div>
+
+    <div class="team-section">
+      <h2>Наша команда</h2>
+      <div class="team-member">
+      <img src="../images/member-photo.jpg" alt="Ирина" class="member-photo">
+      <h3>Ирина</h3>
+     <p>Основатель проекта</p>
+   </div>
+
+        <div class="team-member">
+         <img src="../images/member-photo1.jpg" alt="Иван" class="member-photo">
+          <h3>Иван</h3>
+          <p>Кошачий психолог</p>
+        </div>
+      </div>
+
+    <div class="values">
+      <h2>Наши ценности</h2>
+      <ul>
+        <li>💖 Любовь к каждому пушистому другу</li>
+        <li>😊 Распространение радости и позитива</li>
+        <li>🤝 Поддержка сообщества любителей котиков</li>
+        <li>🎭 Юмор и доброта в каждом меме</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Мир Котов. Все права защищены.</p>
+      <div class="social-icons">
+        <a href="https://t.me/MiraMorim" target="_blank">
+          <img src="../images/telegram.png" alt="Telegram">
+        </a>
+        <a href="https://vk.com/@id611659084" target="_blank">
+          <img src="../images/vk.png" alt="ВКонтакте">
+        </a>
+        <a href="https://wa.me/89026077442" target="_blank">
+          <img src="../images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="mailto:kakurina10@bk.ru">
+          <img src="../images/envelope.png" alt="Email">
+        </a>
+        <a href="https://www.tiktok.com/@_who_am_i_546" target="_blank">
+          <img src="../images/tik-tok.png" alt="TikTok">
+        </a>
+      </div>
+      <p class="right">Разработано с любовью</p>
+    </div>
+    <div class="footer-links">
+      <a href="./about.html">О нас</a>
+      <a href="faq">Часто задаваемые вопросы</a>
+      <a href="privacy">Политика конфиденциальности</a>
+    </div>
+    <div class="newsletter">
+      <p>Подпишитесь на нашу рассылку, чтобы не пропустить новые мемы!</p>
+      <input type="email" placeholder="Ваш email">
+      <button>Подписаться</button>
+    </div>
+    <p class="slogan">Смех и радость с каждым мемом и котенком!</p>
+  </footer>
+
+  <script src="../index.js"></script>
+  <script src="../class.js"></script>
 </body>
 </html>
