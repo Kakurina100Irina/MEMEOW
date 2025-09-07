@@ -3,29 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MEMEOW | Наши питомцы</title>
     <link rel="stylesheet" href="./../style.css">
-</head>
+
+<title>О нас | Мир Котов</title>
+  <link rel="stylesheet" href="../style.css"> 
+
 <body>
-     <header class="header">
-        <a href="./../index.html">
-    <img src="./../images/i.webp" alt="">
-    </a>
-    <nav class="nav">
-      <a href="URL">
-        Главная
-      </a>
-      <a href="URL">
-        О нас
-      </a>
-      <a href="URL">
-        Контакты
-      </a>
-      <a href="URL">
-        Наши питомцы
-      </a>
+  <header class="header">
+    <img src="../images/i.webp" alt="Логотип Мир Котов"> 
+    <nav role="navigation">
+      <div class="menuToggle">
+        <input type="checkbox" class="menuCheckbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <li>
+            <a href="../index.html"> 
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Главная</label>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="active"> 
+              <label for="menuCheckbox" onclick="this.parentNode.click();">О нас</label>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Контакты</label>
+            </a>
+          </li>
+          <li>
+            <a href="./ourPets.html">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Наши питомцы</label>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <h1>Наши питомцы</h1>
+
+  <div class="cover pets-cover">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="content_h1">
+        Знакомьтесь с нашими питомцами!
+      </h1>
+      <p class="content_p">
+        Каждый из наших пушистых друзей обладает уникальным характером и талантами. 
+      </p>
+    </div>
+  </div>
+
+  <section class="pets-content">
+    <h2>Наша пушистая команда</h2>
+    
+    <div class="pets-filter">
+      <button class="filter-btn active" data-filter="all">Все питомцы</button>
+    </div>
+
+    <div class="pets-gallery">
+  <div class="pet-item">
+    <div class="pet-image">
+      <img src="/images/photo_4.jpg" alt="">
+      <div class="pet-overlay">
+        <span class="pet-status">Мем-король</span>
+      </div>
+    </div>
+    <div class="pet-info">
+      <h3>Черныш</h3>
+      <p>Мастер грозного взгляда</p>
+      <span class="pet-age">1 год</span>
+      <div class="pet-features">
+        <span>#Усатый</span>
+        <span>#Смешной</span>
+      </div>
+    </div>
+  </div>
+  <div class="pet-item">
+    <div class="pet-image">
+      <img src="/images/photo_2.jpg" alt="">
+      <div class="pet-overlay">
+        <span class="pet-status">Модница</span>
+      </div>
+    </div>
+    <div class="pet-info">
+      <h3>Тюля</h3>
+      <p>Королева элегантности</p>
+      <span class="pet-age">8 лет</span>
+      <div class="pet-features">
+        <span>#Грациозная</span>
+        <span>#Фотогеничная</span>
+      </div>
+    </div>
+  </div>
+  <div class="pet-item">
+    <div class="pet-image">
+      <img src="/images/photo_5.jpg" alt="">
+      <div class="pet-overlay">
+        <span class="pet-status">Непоседа</span>
+      </div>
+    </div>
+    <div class="pet-info">
+      <h3>Буся</h3>
+      <p>Энергичная</p>
+      <span class="pet-age">2-3 месяца</span>
+      <div class="pet-features">
+        <span>#Любопытная</span>
+        <span>#Игривая</span>
+      </div>
+    </div>
+  </div>
+  <div class="pet-item">
+    <div class="pet-image">
+      <img src="/images/photo_3.jpg" alt="">
+      <div class="pet-overlay">
+        <span class="pet-status">Философ</span>
+      </div>
+    </div>
+    <div class="pet-info">
+      <h3>Мэрсик</h3>
+      <p>Любитель глубоких мыслей</p>
+      <span class="pet-age">3-4 года</span>
+      <div class="pet-features">
+        <span>#Мудрый</span>
+        <span>#Усатый</span>
+      </div>
+    </div>
+  </div>
+  <div class="pet-item">
+    <div class="pet-image">
+      <img src="/images/photo_6.jpg" alt="">
+      <div class="pet-overlay">
+        <span class="pet-status">Акробатка</span>
+      </div>
+    </div>
+    <div class="pet-info">
+      <h3>Бусинка</h3>
+      <p>Мастер акробатических трюков</p>
+      <span class="pet-age">4-5 месяцев</span>
+      <div class="pet-features">
+        <span>#Гибкая</span>
+        <span>#Ловкая</span>
+      </div>
+    </div>
+  </div>
+  <div class="pet-item">
+    <div class="pet-image">
+      <img src="/images/photo_1.jpg" alt="">
+      <div class="pet-overlay">
+        <span class="pet-status">Ленивый охотник</span>
+      </div>
+    </div>
+    <div class="pet-info">
+      <h3>Маркиз</h3>
+      <p>Ленивый, но очень милый</p>
+      <span class="pet-age">5 лет</span>
+      <div class="pet-features">
+        <span>#Отдых</span>
+        <span>#Мудрый</span>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section class="adoption-info">
+    <div class="adoption-content">
+      <h2>Хотите, чтобы мы добавили вашего питомца?</h2>
+      <p>Мы уважаем и ценим любовь к домашним животным</p>
+      <a href="./contact.html" class="adoption-btn">Связаться с нами</a>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 MEMEOW. Все права защищены.</p>
+      <div class="social-icons">
+        <a href="https://t.me/MiraMorim" target="_blank">
+          <img src="../images/telegram.png" alt="Telegram">
+        </a>
+        <a href="https://vk.com/@id611659084" target="_blank">
+          <img src="../images/vk.png" alt="ВКонтакте">
+        </a>
+        <a href="https://wa.me/89026077442" target="_blank">
+          <img src="../images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="mailto:kakurina10@bk.ru">
+          <img src="../images/envelope.png" alt="Email">
+        </a>
+        <a href="https://www.tiktok.com/@_who_am_i_546" target="_blank">
+          <img src="../images/tik-tok.png" alt="TikTok">
+        </a>
+      </div>
+      <p class="right">Разработано с любовью</p>
+    </div>
+    <div class="footer-links">
+      <a href="./about.html">О нас</a>
+      <a href="faq">Часто задаваемые вопросы</a>
+      <a href="privacy">Политика конфиденциальности</a>
+    </div>
+    <div class="newsletter">
+      <p>Подпишитесь на нашу рассылку, чтобы не пропустить новые мемы!</p>
+      <input type="email" placeholder="Ваш email">
+      <button>Подписаться</button>
+    </div>
+    <p class="slogan">Смех и радость с каждым мемом и котенком!</p>
+  </footer>
+  <script src="../index.js"></script>
 </body>
 </html>
