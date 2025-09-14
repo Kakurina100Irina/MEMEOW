@@ -3,29 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MEMEOW | Контакты</title>
     <link rel="stylesheet" href="./../style.css">
-</head>
 <body>
-     <header class="header">
-        <a href="./../index.html">
-    <img src="./../images/i.webp" alt="">
-    </a>
-    <nav class="nav">
-      <a href="URL">
-        Главная
-      </a>
-      <a href="URL">
-        О нас
-      </a>
-      <a href="URL">
-        Контакты
-      </a>
-      <a href="URL">
-        Наши питомцы
-      </a>
+  <header class="header">
+    <img src="../images/i.webp" alt="Логотип Мир Котов"> 
+    <nav role="navigation">
+      <div class="menuToggle">
+        <input type="checkbox" class="menuCheckbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <li>
+            <a href="../index.html"> 
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Главная</label>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="active"> 
+              <label for="menuCheckbox" onclick="this.parentNode.click();">О нас</label>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Контакты</label>
+            </a>
+          </li>
+          <li>
+            <a href="./ourPets.html">
+              <label for="menuCheckbox" onclick="this.parentNode.click();">Наши питомцы</label>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <h1>Контакты</h1>
+  <div class="cover contact-cover">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="content_h1">
+        Свяжитесь с нами!
+      </h1>
+      <p class="content_p">
+        Мы всегда рады вашим вопросам, предложениям и, конечно, новым мемам с котиками!
+      </p>
+    </div>
+  </div>
+
+  <section class="contact-content">
+    <h2>Наши контакты</h2>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-details">
+            <h3>Email</h3>
+            <p>kakurina10@bk.ru</p>
+            <span>Отвечаем в течение суток</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-details">
+            <h3>Телефон</h3>
+            <p>+7 (902) 607-74-42</p>
+            <span>Пн-Пт с 10:00 до 17:00</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-details">
+            <h3>Соцсети</h3>
+            <div class="social-contacts">
+              <a href="https://t.me/MiraMorim" target="_blank">Telegram</a>
+              <a href="https://vk.com/@id611659084" target="_blank">ВКонтакте</a>
+              <a href="https://www.tiktok.com/@_who_am_i_546" target="_blank">TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Напишите нам</h3>
+        <form class="form__container">
+          <div class="form-group">
+            <label for="contact-name">Ваше имя</label>
+            <input type="text" id="contact-name" placeholder="Как к вам обращаться?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="Ваш email для ответа" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">Тема</label>
+            <select id="contact-subject">
+              <option value="">Выберите тему</option>
+              <option value="question">Вопрос</option>
+              <option value="suggestion">Предложение</option>
+              <option value="cooperation">Сотрудничество</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Сообщение</label>
+            <textarea id="contact-message" placeholder="Расскажите, что у вас на уме..." rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn contact-btn">Отправить сообщение</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 MEMEOW. Все права защищены.</p>
+      <div class="social-icons">
+        <a href="https://t.me/MiraMorim" target="_blank">
+          <img src="../images/telegram.png" alt="Telegram">
+        </a>
+        <a href="https://vk.com/@id611659084" target="_blank">
+          <img src="../images/vk.png" alt="ВКонтакте">
+        </a>
+        <a href="https://wa.me/89026077442" target="_blank">
+          <img src="../images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="mailto:kakurina10@bk.ru">
+          <img src="../images/envelope.png" alt="Email">
+        </a>
+        <a href="https://www.tiktok.com/@_who_am_i_546" target="_blank">
+          <img src="../images/tik-tok.png" alt="TikTok">
+        </a>
+      </div>
+      <p class="right">Разработано с любовью</p>
+    </div>
+    <div class="footer-links">
+      <a href="./about.html">О нас</a>
+      <a href="faq">Часто задаваемые вопросы</a>
+      <a href="privacy">Политика конфиденциальности</a>
+    </div>
+    <div class="newsletter">
+      <p>Подпишитесь на нашу рассылку, чтобы не пропустить новые мемы!</p>
+      <input type="email" placeholder="Ваш email">
+      <button>Подписаться</button>
+    </div>
+    <p class="slogan">Смех и радость с каждым мемом и котенком!</p>
+  </footer>
+
 </body>
 </html>
